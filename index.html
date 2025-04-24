@@ -1,14 +1,64 @@
 <!DOCTYPE html>
+
+<html lang="pt-br
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document Zézé di Camargo</title>
+    <title>Site Exemplo</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-Zézé di Camargo é um cantor sertanejo, famoso pela dupla Zézé di Camargo e Luciano .Junto com seu irmão fez sucesso
-nos anos 90 com a música 'É O AMOR' alem da carreira em dupla , também tem carreira solo , é um dos maiores nomes da música 
-sertaneja no Brasil.
-    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="section">
+        <div class="container">
+            <h1>Bem-vindo ao Nosso Site!</h1>
+            <p>Este é um exemplo de site bem elaborado, usando HTML, CSS e JavaScript.</p>
+            <button onclick="changeText()">Clique Aqui!</button>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>Sobre Nós</h2>
+            <p>Somos uma equipe de desenvolvedores dedicados a criar sites bonitos e funcionais.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contato</h2>
+            <form>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
